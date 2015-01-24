@@ -1,0 +1,43 @@
+{
+    "name": "acute-express-data",
+    "description": "An aCute app plugin for using using and access data sources in an express-like app container",
+    "version": "0.1.0",
+    "main": "lib/index.js",
+    "author": {
+        "name": "John O'Connor",
+        "email": "sax1johno@gmail.com"
+    },
+    "contributors": [{
+        "name": "John O'Connor",
+        "email": "sax1johno@gmail.com"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sax1johno/acute-express-data.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sax1johno/acute-express-data/issues"
+    },
+    "homepage": "https://github.com/sax1johno/acute-express-data",
+    "keywords": [
+        "acute",
+        "express",
+        "data",
+        "data sources"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "async": "*",
+        "underscore": "*",
+        "architect": "*",
+        "path": "*",
+        "util": "*"
+    },
+    "plugin": {
+        "provides": ["data"],
+        "consumes": [
+            "app",
+            "data-mongodb"
+        ]
+    }
+}
